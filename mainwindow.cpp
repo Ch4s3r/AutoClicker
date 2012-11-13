@@ -51,12 +51,12 @@ void MainWindow::on_btnStart_clicked()
         return;
     }
 
+    short key = VkKeyScanW(ui->txtKey->text().at(0).toAscii());
     while (1){
-        short a = VkKeyScanW(ui->txtKey->text().at(0).toAscii());
         qDebug() << a;
-        PostMessageW(hWnd, WM_KEYDOWN, VkKeyScan(ui->txtKey->text().at(0).toLatin1()), 0);
+        PostMessageW(hWnd, WM_KEYDOWN, key, 0);
         Sleep(100);
-        PostMessage(hWnd, WM_KEYUP, VkKeyScan(ui->txtKey->text().at(0).toLatin1()), 0); //
+        PostMessage(hWnd, WM_KEYUP, key, 0); //
         Sleep(ui->txtTime->text().toInt());
     }
 }
