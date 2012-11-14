@@ -18,14 +18,14 @@
     <item row="0" column="0">
      <widget class="QLabel" name="label">
       <property name="text">
-       <string>Window Name:</string>
+       <string>Process Name:</string>
       </property>
      </widget>
     </item>
     <item row="0" column="2">
      <widget class="QLineEdit" name="txtWName">
       <property name="text">
-       <string>notepad.exe</string>
+       <string>Wow-64.exe</string>
       </property>
      </widget>
     </item>
@@ -39,7 +39,7 @@
     <item row="1" column="2">
      <widget class="QLineEdit" name="txtKey">
       <property name="text">
-       <string>a</string>
+       <string>1</string>
       </property>
      </widget>
     </item>

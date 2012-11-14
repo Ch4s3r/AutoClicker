@@ -11,8 +11,10 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    sendthread.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    sendthread.h
 
 FORMS    += mainwindow.ui
